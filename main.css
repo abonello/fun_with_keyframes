@@ -1,0 +1,96 @@
+.container1 {
+    margin: 5px 20px;
+    padding: 10px 50px;
+    border: 1px dashed #894536;
+    height: 570px;
+    width: 20%;
+    float: left;
+    box-sizing: border-box;
+}
+
+.box {
+    width: 150px;
+    height: 0;
+    margin: 0 25px;
+    animation-name: growing;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    color: #fff;
+    text-align: center;
+}
+
+.box1 {
+    background-color: #000;      /*2*/
+    animation-duration: 2000ms;
+}
+
+.box2 {
+    background-color: #511;      /*3*/
+    animation-duration: 1333ms;
+}
+
+.box3 {
+    background-color: #576;      /*5*/
+    animation-duration: 800ms;
+}
+
+.box4 {
+    background-color: #675;      /*4*/
+    animation-duration: 1000ms;
+}
+
+.box5 {
+    background-color: #0b8;      /*6*/
+    animation-duration: 667ms;
+}
+
+.box6 {
+    background-color: #a79;      /*7*/
+    animation-duration: 571ms;
+}
+
+.box7 {
+    background-color: #976;      /*9*/
+    animation-duration: 444ms;
+}
+
+.circlecontainer {
+    clear: both;
+}
+
+.circlebox {
+    width: 100px;
+    height: 100px;
+    background-color: #a9a956;
+    animation-name: toCircle;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 5;
+    animation-direction: alternate;
+    animation-duration: 200ms;
+}
+
+@keyframes growing {
+    from {
+        height: 0;
+        font-size: 0;
+        line-height: 20px;
+    }
+    
+    to {
+        height: 150px;
+        font-size: 50px;
+        line-height: 150px;
+    }
+}
+
+@keyframes toCircle {
+    from {
+        border-radius: 0;
+    }
+    to {
+        border-radius: 50%;
+    }
+}
